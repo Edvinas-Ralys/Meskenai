@@ -1,9 +1,22 @@
 :root{
---text: rgb(254, 241, 231);
+/* --text: rgb(254, 241, 231);
 --background: rgb(0, 0, 0);
 --primary: rgb(195, 87, 9);
 --secondary: rgb(63, 28, 3);
---accent: rgb(244, 117, 26);
+--accent: rgb(244, 117, 26); */
+
+/* --text: #09092a;
+--background: #e6e6fa;
+--primary: #431872;
+--secondary: #f1c0f2;
+--accent: #bb28bd; */
+
+--text: #17020e;
+--background: #ffffff;
+--primary: #98101b;
+--secondary: #c3f9d9;
+--accent: #17d9c9;
+
 
 }
 
@@ -14,13 +27,14 @@ body{
     background-color: var(--background);
     height: 180vh;
     text-decoration: none;
+    text-align: center;
 }
 .banner{
     width: 100vw;
-    height: 98vh;
+    height: 99vh;
     margin:0px;
     padding: 0px;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     display: flex;
     justify-content: space-around;
     
@@ -33,11 +47,10 @@ body{
     font-size: 5rem;
     font-weight: 100;
     letter-spacing: 2.5rem; 
-}
-h1{
     position: sticky;
     top:2vh;
 }
+
 .content_title{
     display: flex;
     justify-content: space-around;
@@ -48,7 +61,15 @@ h1{
     height: 78vh;
     margin-left: auto;
     margin-right: auto;
-
+}
+.content_block, .content_inline{
+    width: 75vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+.moreInfo{
+    margin:0;
+    text-align: center;
 }
 .info{
     display: grid;
@@ -98,7 +119,11 @@ p{
     font-size: 1.7rem;
     margin:1rem
 }
-
+img{
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5vh;
+}
 
 
 ::-webkit-scrollbar{
