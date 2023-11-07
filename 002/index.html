@@ -10,24 +10,29 @@
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <main>
+    <main> 
+        <a href="#top">
+            <div class="up"><p>Up</p></div>
+        </a>
         <div class="banner">
             <h1 class="title">HTML ŽYMENYS</h1>
         </div>
         <div class="content">
-            <a href="https://www.w3schools.com/html/html_blocks.asp"><h2 class="moreInfo">Daugiau informacijos</h2></a>
             <div class="content_title">
-                <a href="http://127.0.0.1:5500/pages/block-info.html">
-                    <h2>Blokiniai žymenys</h2>
+                <a class="link_block link" href="http://127.0.0.1:5500/pages/block-info.html">
+                    <div class="block_tags">
+                        <h2>Blokiniai žymenys</h2>
+                    </div>
                 </a>
-                <a href="http://127.0.0.1:5500/pages/inline-info.html">
-                    <h2>Linijinai žymenys</h2>
+                <a class = "link_inline link" href="http://127.0.0.1:5500/pages/inline-info.html">
+                    <div class="inline_tags">
+                        <h2>Linijinai žymenys</h2>
+                    </div>
                 </a>
             </div>
             <div class="info">
                 <div class="block">
-                    <div class="block_info">
-                        
+                    <a class = "link" target="_blank" href="https://www.w3schools.com/tags/tag_div.ASP">
                         <div class="category div">
                             <h3>Žymuo &ltdiv&gt</h3>
                             <p>
@@ -40,6 +45,8 @@
                                 Į &ltdiv&gt žymenį gali būti talpinamas bet koks turinys
                             </p>
                         </div>
+                    </a>
+                    <a class = "link" target="_blank" href="https://www.w3schools.com/tags/tag_p.asp">
                         <div class="category p">
                             <h3>Žymuo &ltp&gt</h3>
                             <p>
@@ -52,7 +59,9 @@
                                 Su žymeniu &ltp&gt gali būti naudojami <i>class</i> ir <i>ID</i> atributai
                             </p>
                         </div>
-                        <div class="category p">
+                    </a>
+                    <a class = "link" target="_blank" href="https://www.w3schools.com/tags/tag_hn.asp">
+                        <div class="category h1">
                             <h3>Žymuo &lth1&gt</h3>
                             <p>
                                 Nurodo turinio antraštę
@@ -64,6 +73,8 @@
                                 Žymėjimus nuo &lth1&gt iki &lth6&gt reikia naudoti nuosekliai ir nepraleidžiant
                             </p>
                         </div>
+                    </a>
+                    <a class = "link" target="_blank" href="https://www.w3schools.com/tags/tag_ol.asp">
                         <div class="category ol">
                             <h3>Žymuo &ltol&gt</h3>
                             <p>
@@ -76,6 +87,8 @@
                                 Žymuo &ltli&gt yra naudojamas išskirti kiekvieną sąrašo elementą
                             </p>
                         </div>
+                    </a>
+                    <a class = "link" target="_blank" href="https://www.w3schools.com/html/html_tables.asp">
                         <div class="category table">
                             <h3>Žymuo &lttable&gt</h3>
                             <p>
@@ -88,10 +101,10 @@
                                 &lttr&gt nurodo eilutę, &lttd&gt nurodo lentelės vieną elementą
                             </p>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 <div class="inline">
-                    <div class="inline_info">
+                    <a class = "link" target="_blank" href=https://www.w3schools.com/tags/tag_span.asp>
                         <div class="category span">
                             <h3>Žymuo &ltspan&gt</h3>
                             <p>
@@ -104,6 +117,8 @@
                                 Žymuo labai panašus į &ltdiv&gt žymenį, bet &ltspan&gt yra linijinis, o &ltdiv&gt yra blokinis
                             </p>
                         </div>
+                    </a>
+                    <a class = "link" target="_blank" href="https://www.w3schools.com/tags/tag_b.asp">
                         <div class="category b">
                             <h3>Žymuo &ltb&gt</h3>
                             <p>
@@ -116,6 +131,8 @@
                                 Kiti variantai, kaip išryįkinti teksta: <em>&ltem&gt</em>, <strong>&ltstrong&gt</strong>, <mark>&ltmark&gt</mark>
                             </p>
                         </div>
+                    </a>
+                    <a class = "link" target="_blank" href="https://www.w3schools.com/tags/tag_button.asp">
                         <div class="category button">
                             <h3>Žymuo &ltbutton&gt</h3>
                             <p>
@@ -128,6 +145,8 @@
                                 Mygtuką paprasta stilizuoti su CSS bei priskirti funkcijas su JS <button><strong>DO NOT CLICK!</strong></button>
                             </p>
                         </div>
+                    </a>
+                    <a class = "link" target="_blank" href="https://www.w3schools.com/tags/tag_script.asp">
                         <div class="category script">
                             <h3>Žymuo &ltscript&gt</h3>
                             <p>
@@ -140,6 +159,8 @@
                                 JS naudojamas turinio manipuliacijai ir ne tik
                             </p>
                         </div>
+                    </a>
+                    <a class = "link" target="_blank" href="https://www.w3schools.com/tags/tag_a.asp">
                         <div class="category a">
                             <h3>Žymuo &lta&gt</h3>
                             <p>
@@ -149,10 +170,10 @@
                                 Svarbiausias žymens atributas - <em><strong>href</strong></em>, kuris skirtas kito puslapio nuorodai
                             </p>
                             <p>
-                                Priklausomai ar nuoroda buvo paspausta - tekstas atrodys <a href="">skirtingai</a>
+                                Priklausomai ar nuoroda buvo paspausta - tekstas atrodys <a href>skirtingai</a>
                             </p>
                         </div>
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>
