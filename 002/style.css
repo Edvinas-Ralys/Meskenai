@@ -7,7 +7,7 @@
     --accent: #506586;
     --third: #1c293e;
 }
-.link{
+a{
     text-decoration: none;
     color: var(--text) ;
 }
@@ -23,11 +23,11 @@ body{
     background-color: var(--secondary);
     text-decoration: none;
     text-align: center;
+    display: flex;
+    justify-content: center;
 }
 main{
-    width: 80vw;
-    margin-left: auto;
-    margin-right: auto;
+    width: min(80%, 90vw);
     background-color: var(--background);
 }
 .up{
@@ -46,6 +46,9 @@ main{
     margin-bottom: auto;
     padding: 0;
 }
+
+
+
 .link_block, .link_inline{
 text-align: center;
 transition: 0.3s;
@@ -74,44 +77,59 @@ height: auto;
     border-radius: 5px;
 }
 
-.title{
-    font-size: 50px;
+h1{
+    font-size: 5vw;
     font-weight: 100;
-    letter-spacing: 50px;
+    letter-spacing: 1rem;
     margin-top: 10px;
     margin-bottom: 50px;
+    text-align: center;
+    margin:0;
+    text-align: right;
+}
+.banner{
+    display: flex;
+    justify-content: center;
 }
 .info{
     display: flex;
     justify-content: space-around;
-    margin-left: auto;
-    margin-right: auto;
-}
-.content_title{
-    display:flex;
-    justify-content: space-around;
-    position: sticky;
-    top:-1px;
-    background-color: var(--banner);
-    letter-spacing: 10px;
-    font-size: 25px;
+    flex-wrap: wrap;
+    /* width: min-content; */
 }
 
 .info > .block, .inline{
-    display: inline-block;
-    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    height: fit-content;
+    gap: 20px;
+    flex-grow: 1;
+    margin-bottom: 20px;
 }
-.inline_title, .block_title{
-    position: sticky;
-    top: 50px;
-    border: 2px solid black;
+.block_title, .inline_title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3vw;
+    background-color: var(--accent);
+    height: min(11vw, 90px);
+    /* border-radius: 1rem; */
+    width: 100%;
+}
+h2{
+    margin:0;
+    font-size: max(4vw, 40px);
 }
 
+
 .category{
-    margin:2rem;
     border: 2px solid var(--accent);
     border-radius: 4px;
     transition: 0.3s;
+    width: min(460px, 90vw);
 }
 .category:hover{
     background-color: var(--secondary);
@@ -127,7 +145,7 @@ height: auto;
     box-shadow: 5px 5px 10px var(--primary);
     transition: 0.3s;
     transform: scale(1.02);
-    transition: 0.3s;    
+    transition: 0.3s;
 }
 
 p{
@@ -167,3 +185,12 @@ margin-bottom: 20px;
 ::-webkit-scrollbar-thumb{
     background-color: var(--accent);
     border-radius: 5px;}
+
+@media screen and (max-width:600px) {
+    main{
+        width: 100%;
+    }
+    .up{
+        display: none;
+    }
+}
