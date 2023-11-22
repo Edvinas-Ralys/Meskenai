@@ -88,11 +88,11 @@ for(let i = 0; i < 5; i++){
 
     //  B  //
 console.log(`%cDalis B`, `color:purple; background-color:gray`)
-console.log(sum)
+console.log(sum, typeof sum)
 
     //  C  //
 console.log(`%cDalis C`, `color:purple; background-color:gray`)
-console.log(numString)
+console.log(numString, typeof numString)
 
     //  D  //
 console.log(`%cDalis D`, `color:purple; background-color:gray`)
@@ -139,6 +139,7 @@ console.log(`Odd numbers: ${odd}`)
 
     //  F  //
 console.log(`%cDalis F`, `color:purple; background-color:gray`)
+console.log(`NEAISKU`)
 
 
 
