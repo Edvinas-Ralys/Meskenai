@@ -85,3 +85,6 @@ console.log(isPink);
 
 colors.includes(`black`) ? console.log(`YES BLACK`) : console.log(`NO BLACK`);
 colors.includes(`pink`) ? console.log(`YES PINK`) : console.log(`NO PINK`);
+console.log(`-------------------------------------------------`);
+
+

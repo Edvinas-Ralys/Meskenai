@@ -157,7 +157,7 @@ console.log(`ASTUNTA UZDUOTIS`);
 const messyArr = () => {
   let arr = [];
   for (let i = 0; i < firstUnique.length; i++) {
-    arr.splice(firstUnique[i], seconUnique[i]);
+    arr.splice(firstUnique[i], 0, seconUnique[i]);
   }
   return arr;
 };
