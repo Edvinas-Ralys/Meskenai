@@ -9,12 +9,13 @@
 // console.log(allMulti);
 
 //KETVIRTAS//
-// let inputString = prompt(`Enter a string`);
-// console.log(`String: ${inputString}`);
-// let stringReversed = inputString.split(``).reverse().join(``);
-// console.log(`Reversed: ${stringReversed}`);
+let inputString = prompt(`Enter a string`);
+console.log(`String: ${inputString}`);
+let stringReversed = inputString.split(``).reverse().join(``);
+console.log(`Reversed: ${stringReversed}`);
 
 //PENKTAS//
+// let userInput = prompt(`Enter a number`);
 // const isPrime = (number) => {
 //   let divisionCount = 0;
 //   for (let i = 2; i < number; i++) {
@@ -28,9 +29,9 @@
 //     return `not prime`;
 //   }
 // };
-// console.log(isPrime(15));
+// console.log(isPrime(userInput));
 
-//SESTAS//
+//SESTAS//s
 // let userString = prompt(`Enter a word`);
 // const vowels = [`a`, `e`, `i`, `o`, `u`, `y`];
 // const countVowels = (arr) => {
@@ -45,7 +46,7 @@
 //SEPTINTA//
 // let userInput = prompt(`Enter a numeber`);
 // const allSquareSum = (number) => {
-//   let total = 1;
+//   let total = 0;
 //   for (let i = 1; i <= number; i++) {
 //     total += i * i;
 //   }
@@ -57,17 +58,15 @@
 // let userInput = prompt(`Enter a word`);
 // const checkPolindrome = (word) => {
 //   let wordArr = word.toLocaleLowerCase().split(``);
-//   console.log(wordArr.length);
+//   console.log(`Word:${userInput}`);
 //   let reversedWordArr = word.toLocaleLowerCase().split(``).reverse();
-//   console.log(reversedWordArr);
+//   console.log(`Reversed: ${reversedWordArr.join(``)}`);
 //   let sameLetter = 0;
 //   for (let i = 0; i < wordArr.length; i++) {
 //     if (wordArr[i] == reversedWordArr[i]) {
 //       sameLetter++;
 //     }
 //   }
-//   console.log(wordArr.length);
-//   console.log(sameLetter);
 //   if (sameLetter == wordArr.length) {
 //     return `is palindrome`;
 //   } else {
@@ -77,56 +76,55 @@
 // console.log(checkPolindrome(userInput));
 
 //DEVINTA//
+// let userInput = prompt(`Enter a number`, `9`);
 // const multiplicationTable = (number) => {
 //   for (let i = 1; i <= 9; i++) {
 //     console.log(`${i} x ${number} = ${i * number}`);
 //   }
 // };
-// multiplicationTable(5);
+// multiplicationTable(userInput);
 
 //DESIMTA//
-let userInput = prompt(`Enter a new password`);
-const passValidator = function (password) {
-  const specChars = /[`!@#$%^&*()_\-+=\[\]{};':"\\|,.<>\/?~ ]/;
-  const passwordMissingElement = `color:red`;
-  const passwordHasElement = `color:green`;
-  if (!/\d/.test(password)) {
-    console.log(`%cNeeds a digit`, passwordMissingElement);
-  } else {
-    console.log(`%cPassword contains a digit`, passwordHasElement);
-  }
-  if (!specChars.test(password)) {
-    console.log(`%cNeeds spec chars`, passwordMissingElement);
-  } else {
-    console.log(`%cPassword contains a spec char`, passwordHasElement);
-  }
+// let userInput = prompt(`Enter a new password`);
+// const passValidator = function (password) {
+//   const specChars = /[`!@#$%^&*()_\-+=\[\]{};':"\\|,.<>\/?~ ]/;
+//   const passwordMissingElement = `color:red`;
+//   const passwordHasElement = `color:green`;
+//   if (!/\d/.test(password)) {
+//     console.log(`%cNeeds a digit`, passwordMissingElement);
+//   } else {
+//     console.log(`%cPassword contains a digit`, passwordHasElement);
+//   }
+//   if (!specChars.test(password)) {
+//     console.log(`%cNeeds spec chars`, passwordMissingElement);
+//   } else {
+//     console.log(`%cPassword contains a spec char`, passwordHasElement);
+//   }
 
-  if (password.length < 8) {
-    console.log(`%cPassword too short`, passwordMissingElement);
-  } else {
-    console.log(`%cPassword is longer than 8 chars`, passwordHasElement);
-  }
-  if (!/[A-Z]/.test(password)) {
-    console.log(`%cNeeds atleast one upper case char`, passwordMissingElement);
-  } else {
-    console.log(`%cPassword contains an upper case`, passwordHasElement);
-  }
-  if (!/[a-z]/.test(password)) {
-    console.log(`%cNeeds atleast one lower case char`, passwordMissingElement);
-  } else {
-    console.log(`%cPassword contains a lower case`, passwordHasElement);
-  }
-  if (
-    /\d/.test(password) &&
-    specChars.test(password) &&
-    password.length > 8 &&
-    /[A-Z]/.test(password) &&
-    /[a-z]/.test(password)
-  ) {
-    console.log(`Password OK`);
-    console.log(`Password:${password}`);
-  }
-};
-passValidator(userInput);
-
-// !password.includes(digits) ? console.log(`Needs a digit`) : !password.includes(specChars) ? console.log(`Needs a special char`) ? password.length < 8 ? console.log(`Password too short`) : !/[A-Z]/.test(password) ? console.log(`Needs atleast one upper case char`) : !/[a-z]/.test(password) ? console.log(`Needs atleast one lower case char`) : console.log(`Password is valid: ${password}`)
+//   if (password.length < 8) {
+//     console.log(`%cPassword too short`, passwordMissingElement);
+//   } else {
+//     console.log(`%cPassword is longer than 8 chars`, passwordHasElement);
+//   }
+//   if (!/[A-Z]/.test(password)) {
+//     console.log(`%cNeeds atleast one upper case char`, passwordMissingElement);
+//   } else {
+//     console.log(`%cPassword contains an upper case`, passwordHasElement);
+//   }
+//   if (!/[a-z]/.test(password)) {
+//     console.log(`%cNeeds atleast one lower case char`, passwordMissingElement);
+//   } else {
+//     console.log(`%cPassword contains a lower case`, passwordHasElement);
+//   }
+//   if (
+//     /\d/.test(password) &&
+//     specChars.test(password) &&
+//     password.length > 8 &&
+//     /[A-Z]/.test(password) &&
+//     /[a-z]/.test(password)
+//   ) {
+//     console.log(`Password OK`);
+//     console.log(`Password:${password}`);
+//   }
+// };
+// passValidator(userInput);

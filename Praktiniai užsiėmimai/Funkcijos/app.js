@@ -1,5 +1,6 @@
 //      PIRMAS      //
 console.log(`%cPirma užduotis`, `color:white; background-color:black`);
+
 let string = (text = `Hello`) => text;
 console.log(string());
 
@@ -15,13 +16,13 @@ printing(`Labas`, 7);
 //      Ketvirtas      //
 console.log(`%cKetvirta užduotis`, `color:white; background-color:black`);
 let divisionsCount = (number) => {
-  let noRemainderCount = 0;
+  let remainderCount = 0;
   for (let i = 2; i < number; i++) {
     if (number % i == 0) {
-      noRemainderCount++;
+      remainderCount++;
     }
   }
-  return noRemainderCount;
+  return remainderCount;
 };
 console.log(divisionsCount(110));
 
