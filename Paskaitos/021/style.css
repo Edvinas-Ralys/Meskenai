@@ -1,0 +1,27 @@
+.clickable {
+  background-color: skyblue;
+  width: fit-content;
+  border: 1px solid black;
+  cursor: pointer;
+  border-radius: 3px;
+  user-select: none;
+}
+.input-field {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  margin-top: 50px;
+  gap: 10px;
+}
+.parent {
+  width: 300px;
+  height: 300px;
+  border: 1px solid black;
+  margin: 30px;
+  position: relative;
+}
+.child {
+  position: absolute;
+  top: 0;
+  left: 400px;
+}
