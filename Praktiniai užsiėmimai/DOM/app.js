@@ -11,6 +11,7 @@ h1.classList.remove(`main`);
 
 //Pirmas D
 h2s = document.querySelectorAll(`h2`);
+console.log(h2s[0])
 h2s[0].classList.remove(`main`);
 h2s[0].classList.add(`first`);
 
