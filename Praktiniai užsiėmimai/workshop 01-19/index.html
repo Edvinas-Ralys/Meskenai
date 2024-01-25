@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>document</title>
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Lyginimo Žaidimas</h1>
+      <label for="number1">Pirmas skaičius:</label>
+      <input type="number" id="number1" placeholder="Įveskite pirmą skaičių" />
+
+      <label for="number2">Antras skaičius:</label>
+      <input type="number" id="number2" placeholder="Įveskite antrą skaičių" />
+
+      <button onclick="compareNumbers()">Lyginti</button>
+
+      <p id="result"></p>
+    </div>
+
+    <label for="vardas">Įveskite vardą:</label>
+    <input type="text" id="vardas" placeholder="Įveskite savo vardą" />
+
+    <button onclick="sveikinti()">Sveikintis</button>
+
+    <p id="sveikinimas"></p>
+
+    <!-- Mygtukai fono spalvos ir šriftų dydžio keitimui -->
+    <button onclick="keistiAtsitiktineSpalva()">Keisti Fono Spalvą</button>
+    <button onclick="padidintiSriftuDydi()">Keisti font dydį</button>
+
+    <script>
+      function sveikinti() {
+        var vardas = document.getElementById("vardas").value
+        var sveikinimas = "Sveiki, " + vardas + "!"
+        document.getElementById("sveikinimas").innerHTML = sveikinimas
+      }
+
+      function keistiAtsitiktineSpalva() {
+        var atsitiktineSpalva = getRandomColor()
+        document.body.style.backgroundColor = atsitiktineSpalva
+      }
+
+      function padidintiSriftuDydi() {
+        var naujasDydis = getRandomFontSize()
+        document.body.style.fontSize = naujasDydis
+      }
+
+      function getRandomColor() {
+        var letters = "0123456789ABCDEF"
+        var color = "#"
+        for (var i = 0; i < 6; i++) {
+          color += letters[Math.floor(Math.random() * 16)]
+        }
+        return color
+      }
+
+      function getRandomFontSize() {
+        var randomSize = Math.floor(Math.random() * 20) + 16 // nuo 16 iki 35 px
+        return randomSize + "px"
+      }
+    </script>
+  </body>
+</html>
