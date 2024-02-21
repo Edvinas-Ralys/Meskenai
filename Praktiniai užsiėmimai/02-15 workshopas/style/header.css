@@ -1,0 +1,43 @@
+header {
+    box-shadow: 0 0 5px rgba(0,0,0, 0.15) ;
+    .india{
+        font-family: DM sans;
+        font-weight: 700;
+        background-color: var(--secondary);
+        color: white;
+        text-align: center;
+        padding: 0.6rem;
+        font-size: 0.9rem;
+    }
+    .head{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 2.5rem;
+        padding: 1.2rem;
+        h1{
+            color:var(--primary);
+            font-family: comfortaa;
+            margin-left: 2rem;
+            font-weight: 500 ;
+            font-size: 2.2rem;
+        }
+        nav{
+            margin-left: auto;
+            ul{
+                display: flex;
+                list-style: none;
+                gap: 2rem;
+                li{
+                    font-family: roboto;
+                    font-weight: 500;
+                }
+                a:link, a:visited, a{
+                    text-decoration: none;
+                    color: #000;
+                    font-family: roboto;
+                }
+            }
+        }
+    }
+}

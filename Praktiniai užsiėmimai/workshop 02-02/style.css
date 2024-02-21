@@ -1,0 +1,62 @@
+*, *::before, *::after{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    color: white;
+    font-family: nunito;
+}
+section{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(1, 17, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card{
+    height: 20rem;
+    width: 10rem;
+    border-radius: 10px;
+    cursor: pointer;
+    user-select: none;
+    perspective: 100rem;
+    position: relative;
+
+}
+.card-side{
+    height: 20rem;
+    width: 10rem;
+    box-shadow: 0 0 10px #222;
+    transition: transform 1s ease-in-out;
+    position: absolute;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.card-front{
+    background-color: rgb(0, 128, 0);
+    border-radius: 10px;
+}
+
+.card-back{
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    transform: rotateY(-180deg);
+}
+
+.card:hover .card-front{
+ transform: rotateY(180deg);
+ transition: 1s ease-in-out;
+}
+
+.card:hover .card-back{
+    transform: rotateY(0deg);
+    transition: 1s ease-in-out;
+}
