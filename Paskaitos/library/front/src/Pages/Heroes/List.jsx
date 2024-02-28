@@ -1,5 +1,6 @@
 import { useContext, useEffect } from "react"
 import { Heroes } from "../../Contexts/Heroes"
+import { SERVER_URL } from "../../Components/Constants/main"
 
 function List() {
   const { heroes, setDeleteHero, setEditHero, setOldEditHero, oldEditHero } = useContext(Heroes)
@@ -24,9 +25,19 @@ function List() {
                   <h4>{hero.name}</h4>
                 </div>
                 <div className="card-body">
-                  <p>Book: {hero.book.title}</p>
+                  <div className="row">
+                    <div className="col-5">
+                    <p>Book: {hero.book.title}</p>
                   <p>Author: {hero.author.name} {hero.author.surname}</p>
                   <p>Faction: {hero.good ? `Good` : `Evil`}</p>
+                    </div>
+                    <div className="col-7">
+                        {hero?.image && <img src={hero?.image} alt={hero?.name} className="img-fluid"></img>}
+                        {!hero?.image && <img src={SERVER_URL + `/images/noImage.png`} alt="no image" className="img-fluid"></img>}
+                    </div>
+
+                  </div>
+
                 </div>
                 <div className="card-footer">
                   <button

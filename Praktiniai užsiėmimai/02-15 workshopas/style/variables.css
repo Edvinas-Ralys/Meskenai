@@ -1,4 +1,7 @@
 :root{
     --primary:#9a54bc;
     --secondary: #60267f;
+    --light: hsla(280, 100%, 94%, 0.301);
+    --darker: hsla(280, 100%, 94%, 0.795);
+    --animation-speed: 1s;
 }

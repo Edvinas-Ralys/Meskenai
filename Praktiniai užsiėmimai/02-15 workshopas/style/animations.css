@@ -1,0 +1,10 @@
+@keyframes ligher-bubble {
+    from {
+        transform: translate(-200%);
+        opacity: 0;
+    }
+    to{
+        transform: translate(0%);
+        opacity: 1;
+    }
+}

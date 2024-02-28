@@ -1,10 +1,12 @@
 import * as constants from "../Components/Constants/heroes"
+import { SERVER_URL } from "../Components/Constants/main"
 export default function heroesReducer(state, action) {
   let newState = structuredClone(state ? state : [])
   let hero = null
   switch (action.type) {
     case constants.GET_HEROES_FROM_SERVER:
       newState = action.payload.map(hero => {
+        hero.image = hero.image ? SERVER_URL + `/` + hero.image : null
         hero.author = {}
         hero.book = {}
         hero.author.name = hero.authorName

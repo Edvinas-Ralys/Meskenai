@@ -5,6 +5,8 @@
   border: 2px solid var(--primary);
   border-radius: 3px;
   padding: 0.5rem 0.8rem;
+  background-color: inherit;
+  cursor: pointer;
 }
 
 .btn-dark {
@@ -15,4 +17,5 @@
   color: white !important;
   padding: 0.7rem 1.2rem;
   background-color: var(--primary);
+  cursor: pointer;
 }

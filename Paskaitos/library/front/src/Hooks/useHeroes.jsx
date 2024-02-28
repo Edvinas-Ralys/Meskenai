@@ -27,11 +27,13 @@ function useHeroes(dispatchHeroes) {
     _ => {
       if (null !== storeHero) {
         const uuid = uuidv4()
+        console.log(storeHero)
         dispatchHeroes(a.storeHeroAsTemp({...storeHero, id: uuid}))
-        const withoutHero = {...storeHero}
-        delete withoutHero.hero
+        const withoutAuthor = {...storeHero}
+        delete withoutAuthor.author
+        delete withoutAuthor.book
         axios
-          .post(`${SERVER_URL}/heroes`, {...storeHero, id: uuid})
+          .post(`${SERVER_URL}/heroes`, {...withoutAuthor, id: uuid})
           .then(res => {
             setStoreHero(null)
             dispatchHeroes(a.storeHeroAsReal(res.data))

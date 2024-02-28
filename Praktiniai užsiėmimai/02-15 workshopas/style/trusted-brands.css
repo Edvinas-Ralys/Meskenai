@@ -1,0 +1,17 @@
+.trusted-brands{
+    margin-top: 2rem;
+    font-family: roboto;
+    font-size: 2rem;
+    display: flex;
+    justify-self: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    font-weight: 100;
+    .logos{
+        display: flex;
+        justify-content: space-between;
+        gap: 3.5rem;
+        cursor: pointer;
+    }
+}

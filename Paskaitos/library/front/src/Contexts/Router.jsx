@@ -3,6 +3,7 @@ import Page404 from "../Pages/Err/Page404"
 import AuthorIndex from "../Pages/Authors/Index"
 import BookIndex from "../Pages/Books/Index"
 import HeroesIndex from "../Pages/Heroes/Index"
+import HomeIndex from "../Pages/Home/Index"
 
 export const Router = createContext()
 
@@ -23,7 +24,8 @@ export const RouterProvider = ({ children }) => {
   const routes = [
     { path: `#authors`, component: <AuthorIndex /> },
     { path: `#books`, component: <BookIndex />},
-    {path: `#heroes`, component: <HeroesIndex />}
+    {path: `#heroes`, component: <HeroesIndex />},
+    {path: `#home`, component: <HomeIndex />}
   ]
 
   //*Effect to check route on window load. Sets route and params
